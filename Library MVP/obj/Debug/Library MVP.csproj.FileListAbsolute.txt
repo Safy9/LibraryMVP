@@ -1,0 +1,10 @@
+F:\My Work\Private Work\Library MVP\Library MVP\bin\Debug\Library MVP.exe.config
+F:\My Work\Private Work\Library MVP\Library MVP\bin\Debug\Library MVP.exe
+F:\My Work\Private Work\Library MVP\Library MVP\bin\Debug\Library MVP.pdb
+F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library_MVP.Properties.Resources.resources
+F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library MVP.csproj.GenerateResource.cache
+F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library MVP.csproj.CoreCompileInputs.cache
+F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library MVP.exe
+F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library MVP.pdb
+F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library_MVP.Views.MainFRM.resources
+F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library MVP.csprojAssemblyReference.cache

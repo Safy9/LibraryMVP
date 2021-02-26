@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Library_MVP
+namespace Library_MVP.Views.Forms
 {
-    public partial class Form1 : Form
+    public partial class CategoryFRM : Form
     {
-        public Form1()
+        public CategoryFRM()
         {
             InitializeComponent();
         }

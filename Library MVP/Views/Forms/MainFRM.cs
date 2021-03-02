@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library_MVP.Views.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace Library_MVP.Views
         public MainFRM()
         {            
             InitializeComponent();
+        }
+
+        private void tsbtnCategory_Click(object sender, EventArgs e)
+        {
+            CategoryFRM frm = new CategoryFRM();
+            frm.ShowDialog();
         }
     }
 }

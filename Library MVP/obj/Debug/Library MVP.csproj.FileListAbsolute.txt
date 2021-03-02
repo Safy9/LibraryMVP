@@ -8,3 +8,4 @@ F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library MVP.exe
 F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library MVP.pdb
 F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library_MVP.Views.MainFRM.resources
 F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library MVP.csprojAssemblyReference.cache
+F:\My Work\Private Work\Library MVP\Library MVP\obj\Debug\Library_MVP.Views.Forms.CategoryFRM.resources

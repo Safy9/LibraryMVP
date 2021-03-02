@@ -153,6 +153,7 @@ namespace Library_MVP.Views
             this.tsbtnCategory.Size = new System.Drawing.Size(99, 67);
             this.tsbtnCategory.Text = "تصنيف الكتاب";
             this.tsbtnCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbtnCategory.Click += new System.EventHandler(this.tsbtnCategory_Click);
             // 
             // toolStripSeparator1
             // 

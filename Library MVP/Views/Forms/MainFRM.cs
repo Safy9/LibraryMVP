@@ -23,5 +23,11 @@ namespace Library_MVP.Views
             CategoryFRM frm = new CategoryFRM();
             frm.ShowDialog();
         }
+
+        private void tsbtnCountry_Click(object sender, EventArgs e)
+        {
+            CountryFRM frm = new CountryFRM();
+            frm.ShowDialog();
+        }
     }
 }

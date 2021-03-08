@@ -31,7 +31,6 @@ namespace Library_MVP.Logic.Services
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
             cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = name;
         }
-
         /// <summary>
         /// Methoud to execute stored procedure to update category
         /// </summary>
@@ -40,14 +39,13 @@ namespace Library_MVP.Logic.Services
         /// <returns></returns>
         public static bool categoryUpdate(int id, string name)
         {
-            return DBHelper.executeData("categoryInsert", () => categoryParameterUpdate(id, name, DBHelper.cmd));
+            return DBHelper.executeData("categoryUpdate", () => categoryParameterUpdate(id, name, DBHelper.cmd));
         }
 
         private static void categoryParameterDelete(int id, SqlCommand cmd)
         {
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
         }
-
         /// <summary>
         /// Methoud to execute stored procedure to delete one category
         /// </summary>
@@ -56,8 +54,19 @@ namespace Library_MVP.Logic.Services
         /// <returns></returns>
         public static bool categoryDelete(int id)
         {
-            return DBHelper.executeData("categoryInsert", () => categoryParameterDelete(id, DBHelper.cmd));
+            return DBHelper.executeData("categoryDelete", () => categoryParameterDelete(id, DBHelper.cmd));
         }
 
+        private static void categoryParameterDeleteAll()
+        {
+        }
+        /// <summary>
+        /// Methoud to execute stored procedure to delete all category
+        /// </summary>
+        /// <returns></returns>
+        public static bool categoryDeleteAll()
+        {
+            return DBHelper.executeData("categoryDeleteAll", () => categoryParameterDeleteAll());
+        }
     }
 }

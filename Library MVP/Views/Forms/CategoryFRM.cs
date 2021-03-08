@@ -31,5 +31,34 @@ namespace Library_MVP.Views.Forms
             else
                 MessageBox.Show("حدث خطأ اثناء الاضافة");
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (categorypresenter.CategoryUpdate())
+                MessageBox.Show("تمت التعديل بنجاح");
+            else
+                MessageBox.Show("حدث خطأ اثناء التعديل");
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (categorypresenter.CategoryDelete())
+                MessageBox.Show("تمت الحذف بنجاح");
+            else
+                MessageBox.Show("حدث خطأ اثناء الحذف");
+        }
+
+        private void btnDeleteAll_Click(object sender, EventArgs e)
+        {
+            if (categorypresenter.CategoryDeleteAll())
+                MessageBox.Show("تمت حذف جميع التصنيفات بنجاح");
+            else
+                MessageBox.Show("حدث خطأ اثناء حذف الكل");
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            categorypresenter.clearFields();
+        }
     }
 }

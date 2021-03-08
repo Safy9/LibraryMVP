@@ -33,11 +33,10 @@ namespace Library_MVP.Views
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TP_Setting = new System.Windows.Forms.TabPage();
-            this.TP_Book = new System.Windows.Forms.TabPage();
             this.ts_Setting = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbtnCategory = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbtnAuthor = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbtnDarElNasher = new System.Windows.Forms.ToolStripButton();
@@ -46,6 +45,7 @@ namespace Library_MVP.Views
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbtnPlace = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.TP_Book = new System.Windows.Forms.TabPage();
             this.ts_Book = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
@@ -66,8 +66,8 @@ namespace Library_MVP.Views
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.TP_Setting.SuspendLayout();
-            this.TP_Book.SuspendLayout();
             this.ts_Setting.SuspendLayout();
+            this.TP_Book.SuspendLayout();
             this.ts_Book.SuspendLayout();
             this.TP_Borrow.SuspendLayout();
             this.ts_Borrow.SuspendLayout();
@@ -109,17 +109,6 @@ namespace Library_MVP.Views
             this.TP_Setting.TabIndex = 0;
             this.TP_Setting.Text = "الإعدادات";
             // 
-            // TP_Book
-            // 
-            this.TP_Book.Controls.Add(this.ts_Book);
-            this.TP_Book.Location = new System.Drawing.Point(4, 34);
-            this.TP_Book.Name = "TP_Book";
-            this.TP_Book.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_Book.Size = new System.Drawing.Size(991, 76);
-            this.TP_Book.TabIndex = 1;
-            this.TP_Book.Text = "الكتاب";
-            this.TP_Book.UseVisualStyleBackColor = true;
-            // 
             // ts_Setting
             // 
             this.ts_Setting.BackColor = System.Drawing.Color.White;
@@ -143,6 +132,11 @@ namespace Library_MVP.Views
             this.ts_Setting.TabIndex = 0;
             this.ts_Setting.Text = "toolStrip1";
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 70);
+            // 
             // tsbtnCategory
             // 
             this.tsbtnCategory.Font = new System.Drawing.Font("Droid Arabic Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,11 +153,6 @@ namespace Library_MVP.Views
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 70);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 70);
             // 
             // tsbtnAuthor
             // 
@@ -207,6 +196,7 @@ namespace Library_MVP.Views
             this.tsbtnCountry.Size = new System.Drawing.Size(50, 67);
             this.tsbtnCountry.Text = "الدول";
             this.tsbtnCountry.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbtnCountry.Click += new System.EventHandler(this.tsbtnCountry_Click);
             // 
             // toolStripSeparator5
             // 
@@ -228,6 +218,17 @@ namespace Library_MVP.Views
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 70);
+            // 
+            // TP_Book
+            // 
+            this.TP_Book.Controls.Add(this.ts_Book);
+            this.TP_Book.Location = new System.Drawing.Point(4, 34);
+            this.TP_Book.Name = "TP_Book";
+            this.TP_Book.Padding = new System.Windows.Forms.Padding(3);
+            this.TP_Book.Size = new System.Drawing.Size(991, 76);
+            this.TP_Book.TabIndex = 1;
+            this.TP_Book.Text = "الكتاب";
+            this.TP_Book.UseVisualStyleBackColor = true;
             // 
             // ts_Book
             // 
@@ -403,10 +404,10 @@ namespace Library_MVP.Views
             this.tabControl1.ResumeLayout(false);
             this.TP_Setting.ResumeLayout(false);
             this.TP_Setting.PerformLayout();
-            this.TP_Book.ResumeLayout(false);
-            this.TP_Book.PerformLayout();
             this.ts_Setting.ResumeLayout(false);
             this.ts_Setting.PerformLayout();
+            this.TP_Book.ResumeLayout(false);
+            this.TP_Book.PerformLayout();
             this.ts_Book.ResumeLayout(false);
             this.ts_Book.PerformLayout();
             this.TP_Borrow.ResumeLayout(false);

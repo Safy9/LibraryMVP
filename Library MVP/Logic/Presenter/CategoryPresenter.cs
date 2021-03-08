@@ -31,5 +31,30 @@ namespace Library_MVP.Logic.Presenter
             connectBetweenModelInterface();
             return CategoryService.categoryInsert(categorymodel.ID, categorymodel.CatName);
         }
+
+        public bool CategoryUpdate()
+        {
+            connectBetweenModelInterface();
+            return CategoryService.categoryUpdate(categorymodel.ID, categorymodel.CatName);
+        }
+
+        public bool CategoryDelete()
+        {
+            connectBetweenModelInterface();
+            return CategoryService.categoryDelete(categorymodel.ID);
+        }
+
+        public bool CategoryDeleteAll()
+        {
+            connectBetweenModelInterface();
+            return CategoryService.categoryDeleteAll();
+        }
+
+        public void clearFields()
+        {
+            connectBetweenModelInterface();
+            icategory.ID = 0;
+            icategory.CatName = "";
+        }
     }
 }
